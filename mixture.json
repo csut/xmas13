@@ -1,0 +1,23 @@
+{
+  "convertHtmlOutput": null,
+  "customRubyPath": null,
+  "debug": false,
+  "domain": null,
+  "followLeader": false,
+  "lintScripts": false,
+  "modelSource": null,
+  "preprocessorLocations": null,
+  "preprocessorScriptOutput": null,
+  "preprocessorStyleOutput": null,
+  "projectDescription": "My project description",
+  "projectName": "xmas-13",
+  "publishedId": "10050",
+  "serverHostname": null,
+  "serverPort": null,
+  "simpleModePartnerServer": null,
+  "templateDefaultLayout": "layout",
+  "templateDefaultPage": "index",
+  "templateDirectory": "templates",
+  "type": "mixture",
+  "useCompass": false
+}

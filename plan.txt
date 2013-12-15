@@ -1,0 +1,15 @@
+DONE - have a list of items in itinerary, sorted by date, earlier dates before later dates
+DONE - when an item's date has passed, it get de-emphasized
+DONE - when an item is on the same day as the current day, it gets highlighted
+position in website scrolls to first item with non-elapsed date
+
+**working in scrollToCurrent
+**pass by reference is making the itin item generator go insane, maybe do a new object creator?
+
+angular loads at bottom of body
+
+itinerary items should be stored in javascript objects for easier javascript Date maniuplation in format:
+	{startTime: Date(), description: 'description'}
+ng-repeat unrolls the contents of $scope.itinerary
+each item listed in format:
+	<itin-item start-time="{{startTime}}">{{description}}</itin-item>

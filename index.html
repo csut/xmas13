@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" data-ng-app="cjItin13">
+    <head>
+        <!-- Title block allowing child pages to override -->
+        <title>CJ Itinerary Xmas '13</title>
+        <!-- <link rel="shortcut icon" type="image/ico" href="/favicon.ico" /> -->
+<!--         {{ "app.css" | asset_url | stylesheet_tag }} -->
+        <link rel="stylesheet" href="css/app.css">
+    </head>
+    <body ng-controller="itineraryCtrl">
+        <!-- <button ng-click="scrollToCurrent()">Scroll to current event</button> -->
+        <ul>
+            <li ng-repeat="item in itinerary | orderBy: 'startTime'"
+            ng-class="{
+                elapsed: isElapsed(item.startTime),
+                current: isCurrent(item.startTime)
+            }"
+            id="{{item.id}}"
+            >
+                <img src="img/pres.gif" alt="" ng-show="isCurrent(item.startTime)" id="pres-icon">
+                <span class="time" ng-bind="item.startTime | date: 'M / dd - h:mm a' | lowercase">loading itinerary</span> 
+                <span class="desc" ng-bind="item.description">:)</span>
+            </li>
+        </ul>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
