@@ -410,8 +410,8 @@ table {
 html {
 	width: 80%;
 	margin: 0 auto;
-	font-size: 18pt;
-	line-height: 36pt;
+	font-size: 14pt;
+	line-height: 21pt;
 	text-align: left;
 	background-color: #4E0805;
 	color: #447622;
@@ -434,8 +434,6 @@ li {
 .current {
 	background: #B8C591;
 	color: #4E0805;
-	padding-top: 0;
-	padding-bottom: 32pt;
 }
 
 .time {
@@ -443,8 +441,6 @@ li {
 	margin-right: 24pt;
 }
 #pres-icon {
-	position: relative;
-	bottom: -24pt;
-	margin-right: 12pt;
+  display: block;
 }
 
