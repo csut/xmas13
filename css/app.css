@@ -444,3 +444,25 @@ li {
   display: block;
 }
 
+@media all and (max-width: 750px) {
+  html {
+    font-size: 12pt;
+    line-height: 18pt;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  .time {
+  margin-right: 6pt;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+}
+
