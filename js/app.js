@@ -72,15 +72,15 @@ cjItin13.controller('itineraryCtrl', function($scope, $location, $anchorScroll) 
 
 	$scope.itinerary.push( new itinItem( 2013, 11, 15, 12, 0, 'Chris email Susan to confirm dates' ) );
 
-	$scope.itinerary.push( new itinItem( 2013, 11, 17, 17, 0, 'Chris and Jenny call to schedule a cab from Susan\'s to PDX on the 18th at 4am with portlandtaxi.net' ) );
+	// $scope.itinerary.push( new itinItem( 2013, 11, 17, 17, 0, 'Chris and Jenny call to schedule a cab from Susan\'s to PDX on the 18th at 4am with portlandtaxi.net' ) );
 
 	$scope.itinerary.push( new itinItem( 2013, 11, 18, 3, 0, 'Chris and Jenny wake-up and pack cats' ) );
 
-	$scope.itinerary.push( new itinItem( 2013, 11, 18, 3, 45, 'Drop cats off at Susan\'s and wait for cab' ) );
+	$scope.itinerary.push( new itinItem( 2013, 11, 18, 3, 45, 'Drop cats off at Susan\'s' ) );
 
-	$scope.itinerary.push( new itinItem( 2013, 11, 18, 6, 0, 'Departing PDX on UA1573' ) );
+	$scope.itinerary.push( new itinItem( 2013, 11, 18, 6, 0, 'Departing PDX on UA1573 (res PYVG6W)' ) );
 
-	$scope.itinerary.push( new itinItem( 2013, 11, 18, 13, 33, 'Departing O\'Hare on UA656' ) );
+	$scope.itinerary.push( new itinItem( 2013, 11, 18, 13, 33, 'Departing O\'Hare on UA656 (res PYVG6W)' ) );
 
 	$scope.itinerary.push( new itinItem( 2013, 11, 18, 16, 25, 'Arriving in Albany' ) );
 
@@ -96,9 +96,9 @@ cjItin13.controller('itineraryCtrl', function($scope, $location, $anchorScroll) 
 
 	$scope.itinerary.push( new itinItem( 2013, 11, 30, 17, 0, 'Drive from Worcester to Ballston Spa' ) );
 
-	$scope.itinerary.push( new itinItem( 2013, 11, 31, 14, 29, 'Departing Albany on UA3901' ) );
+	$scope.itinerary.push( new itinItem( 2013, 11, 31, 14, 29, 'Departing Albany on UA3901 (res PYVG6W)' ) );
 
-	$scope.itinerary.push( new itinItem( 2013, 11, 31, 17, 25, 'Departing Dulles on UA1037' ) );
+	$scope.itinerary.push( new itinItem( 2013, 11, 31, 17, 25, 'Departing Dulles on UA1037 (res PYVG6W)' ) );
 
 	$scope.itinerary.push( new itinItem( 2013, 11, 31, 20, 25, 'Arriving in PDX' ) );
 
