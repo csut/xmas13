@@ -58,21 +58,12 @@ cjItin13.controller('itineraryCtrl', function($scope, $location, $anchorScroll) 
 		$location.hash( idOfCurrent );
 		$anchorScroll();
 	};
-	// $scope.$on('$viewContentLoaded', function() {
-	// 	window.console.log('$viewContentLoaded eventhandler has been called');
-	// 	$scope.scrollToCurrent();
-	// });
-	// $scope.currentTime = new Date();
-	// var d = new Date(year, month, day, hours, minutes, seconds, milliseconds);
-
-	// var itinItemGen = function(_startY, _startM, _startD, _startH, _startM, _description)
+	
 	$scope.itinerary = [];
 
 	$scope.itinerary.push( new itinItem( 2013, 11, 14, 5, 0, 'eat indian food!' ) );
 
 	$scope.itinerary.push( new itinItem( 2013, 11, 15, 12, 0, 'Chris email Susan to confirm dates' ) );
-
-	// $scope.itinerary.push( new itinItem( 2013, 11, 17, 17, 0, 'Chris and Jenny call to schedule a cab from Susan\'s to PDX on the 18th at 4am with portlandtaxi.net' ) );
 
 	$scope.itinerary.push( new itinItem( 2013, 11, 18, 3, 0, 'Chris and Jenny wake-up and pack cats' ) );
 
@@ -92,9 +83,9 @@ cjItin13.controller('itineraryCtrl', function($scope, $location, $anchorScroll) 
 
 	$scope.itinerary.push( new itinItem( 2013, 11, 22, 11, 0, 'visit Bachelor Mansion' ) );
 
-	$scope.itinerary.push( new itinItem( 2013, 11, 25, 6, 0, 'Drive from Ballston Spa to Worcester' ) );
+	$scope.itinerary.push( new itinItem( 2013, 11, 23, 6, 0, 'Drive from Ballston Spa to Worcester' ) );
 
-	$scope.itinerary.push( new itinItem( 2013, 11, 30, 17, 0, 'Drive from Worcester to Ballston Spa' ) );
+	$scope.itinerary.push( new itinItem( 2013, 11, 28, 5, 0, 'Drive from Worcester to Ballston Spa' ) );
 
 	$scope.itinerary.push( new itinItem( 2013, 11, 31, 14, 29, 'Departing Albany on UA3901 (res PYVG6W)' ) );
 
@@ -104,94 +95,6 @@ cjItin13.controller('itineraryCtrl', function($scope, $location, $anchorScroll) 
 
 	$scope.itinerary.push( new itinItem( 2013, 11, 31, 21, 0, 'Susan picks up Chris and Jenny at PDX' ) );
 
-	// $scope.itinerary = [
-	// 	{
-	// 		startTime: new Date(2013, 11, 1, 0, 0, 0, 0),
-	// 		description: 'test description test',
-	// 		id: '1'
-	// 	},
-	// 	{
-	// 		startTime: new Date(2013, 10, 5, 8, 0, 0, 0),
-	// 		description: 'description for the second itinerary item',
-	// 		id: '2'
-	// 	},
-	// 	{
-	// 		startTime: new Date(2013, 11, 6, 14, 0, 0, 0),
-	// 		description: 'this is the 3rd desc in the js code',
-	// 		id: '3'
-	// 	},
-	// 	{
-	// 		startTime: new Date(2014, 2, 6, 14, 0, 0, 0),
-	// 		description: 'this is the 4th date, in the futcha',
-	// 		id: '4'
-	// 	},
-	// 	{
-	// 		startTime: new Date(2013, 11, 14, 14, 0, 0, 0),
-	// 		description: 'this is the 5th date, in the now',
-	// 		id: '5'
-	// 	},
-	// 	{
-	// 		startTime: new Date(2013, 11, 21, 14, 0, 0, 0),
-	// 		description: 'this is the 5th date, in the now',
-	// 		id: '6'
-	// 	},
-	// 	{
-	// 		startTime: new Date(2013, 11, 21, 14, 0, 0, 0),
-	// 		description: 'this is the 5th date, in the now',
-	// 		id: '7'
-	// 	},
-	// 	{
-	// 		startTime: new Date(2013, 11, 21, 14, 0, 0, 0),
-	// 		description: 'this is the 5th date, in the now',
-	// 		id: '8'
-	// 	},
-	// 	{
-	// 		startTime: new Date(2013, 11, 21, 14, 0, 0, 0),
-	// 		description: 'this is the 5th date, in the now',
-	// 		id: '9'
-	// 	},
-	// 	{
-	// 		startTime: new Date(2013, 10, 5, 8, 0, 0, 0),
-	// 		description: 'description for the second itinerary item',
-	// 		id: '10'
-	// 	},
-	// 	{
-	// 		startTime: new Date(2013, 11, 6, 14, 0, 0, 0),
-	// 		description: 'this is the 3rd desc in the js code',
-	// 		id: '11'
-	// 	},
-	// 	{
-	// 		startTime: new Date(2014, 2, 6, 14, 0, 0, 0),
-	// 		description: 'this is the 4th date, in the futcha',
-	// 		id: '12'
-	// 	},
-	// 	{
-	// 		startTime: new Date(2013, 11, 14, 14, 0, 0, 0),
-	// 		description: 'this is the 5th date, in the now',
-	// 		id: '13'
-	// 	},
-	// 	{
-	// 		startTime: new Date(2013, 11, 21, 14, 0, 0, 0),
-	// 		description: 'this is the 5th date, in the now',
-	// 		id: '14'
-	// 	},
-	// 	{
-	// 		startTime: new Date(2013, 11, 21, 14, 0, 0, 0),
-	// 		description: 'this is the 5th date, in the now',
-	// 		id: '15'
-	// 	},
-	// 	{
-	// 		startTime: new Date(2013, 11, 21, 14, 0, 0, 0),
-	// 		description: 'this is the 5th date, in the now',
-	// 		id: '16'
-	// 	},
-	// 	{
-	// 		startTime: new Date(2013, 11, 21, 14, 0, 0, 0),
-	// 		description: 'this is the 5th date, in the now',
-	// 		id: '17'
-	// 	}
-
-	// ];
 
 	$scope.scrollToCurrent();
 });
